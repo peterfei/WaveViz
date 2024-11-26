@@ -90,6 +90,8 @@ Here’s an example of what WaveViz can produce:
 
 ![image-20241126172634267](http://image-peterfei-blog.test.upcdn.net/image-20241126172634267.png)
 
+![image-20241126184748156](http://image-peterfei-blog.test.upcdn.net/image-20241126184748156.png)
+
 ------
 
 ## How It Works
