@@ -86,9 +86,9 @@ python waveviz.py your_audio_file.wav --speed 2.0 --num_bars 80 --fps 60
 
 Here’s an example of what WaveViz can produce:
 
+![image-20241126172544016](http://image-peterfei-blog.test.upcdn.net/image-20241126172544016.png)
 
-
-
+![image-20241126172634267](http://image-peterfei-blog.test.upcdn.net/image-20241126172634267.png)
 
 ------
 
