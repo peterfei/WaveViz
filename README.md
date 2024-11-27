@@ -40,16 +40,12 @@ python waveviz.py <audio_file> [options]
 
 | Argument          | Description                                       | Default               |
 | ----------------- | ------------------------------------------------- | --------------------- |
-| `--waveform_type` | Type of waveform: `bars`, `line`, or `circle`.    | `bars`                |
+| `--wave_type` | Type of waveform to generate if no audio file is provided. Options: sine, square, triangle, sawtooth (default: sine).  | `bars`                |
 | `--num_bars`      | Number of bars/points in the visualization.       | 50                    |
 | `--bar_width`     | Width of the bars in the visualization.           | 0.8                   |
 | `--facecolor`     | Background color of the visualization.            | `black`               |
-| `--bar_color`     | Color of the bars/lines.                          | `cyan`                |
-| `--edge_color`    | Edge color of the bars (for `bars` or `circle`).  | `cyan`                |
-| `--bar_opacity`   | Opacity of the bars/lines (0.0 to 1.0).           | 1.0                   |
-| `--speed`         | Playback speed factor (higher values are faster). | 1.0                   |
-| `--fps`           | Frames per second for the animation.              | 30                    |
-| `--ylim`          | Y-axis limit for bar heights.                     | 1.0                   |
+| `--bar_color`     | Color of the bars/lines.                          | `cyan`                |               |                  |
+| `--speed`         | Playback speed factor (higher values are faster). | 1.0                   |                  |
 | `--output`        | Output file name without extension.               | `audio_visualization` |
 
 ------
@@ -65,19 +61,20 @@ python waveviz.py your_audio_file.wav
 ### Line Waveform with Custom Colors
 
 ```bash
-python waveviz.py your_audio_file.wav --waveform_type line --bar_color red --facecolor white
+python generate_audio_visualization.py my_audio.wav --wave_type sine --num_bars 60 --bar_width 0.5 --output my_visualization --speed 1.0
+
 ```
 
 ### Circular Waveform
 
 ```bash
-python waveviz.py your_audio_file.wav --waveform_type circle --num_bars 100 --ylim 1.5
+python generate_audio_visualization.py --wave_type square --num_bars 40 --bar_width 0.7 --output waveform_visualization --speed 1.5
 ```
 
 ### Faster Playback with More Bars
 
 ```
-python waveviz.py your_audio_file.wav --speed 2.0 --num_bars 80 --fps 60
+python generate_audio_visualization.py --wave_type triangle --num_bars 50 --output silent_visualization --speed 1.0
 ```
 
 ------
