@@ -83,11 +83,9 @@ python generate_audio_visualization.py --wave_type triangle --num_bars 50 --outp
 
 Here’s an example of what WaveViz can produce:
 
-![image-20241126172544016](http://image-peterfei-blog.test.upcdn.net/image-20241126172544016.png)
+![img01](./img01.png)
+![img02](./img02.png)
 
-![image-20241126172634267](http://image-peterfei-blog.test.upcdn.net/image-20241126172634267.png)
-
-![image-20241126184748156](http://image-peterfei-blog.test.upcdn.net/image-20241126184748156.png)
 
 ------
 
